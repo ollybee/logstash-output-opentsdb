@@ -15,7 +15,7 @@ class LogStash::Outputs::Opentsdb < LogStash::Outputs::Base
   # The address of the opentsdb server.
   config :host, :validate => :string, :default => "localhost"
 
-  # The port to connect on your graphite server.
+  # The port to connect on your opentsdb server.
   config :port, :validate => :number, :default => 4242
 
   # The metric(s) to use. This supports dynamic strings like %{source_host}
